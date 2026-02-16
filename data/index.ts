@@ -162,7 +162,7 @@ export const testimonials = [
     quote:
       "Collaborating with Kantar, a global leader in data, insights, and consulting, where I am applying my analytical skills to solve complex problems and contribute to data-driven strategies that help brands grow and succeed in a dynamic market.",
     name: "Kantar",
-    title: "OCT 2024 - PRESENT",
+    title: "JUN 2025 - PRESENT",
   },
 ];
 
