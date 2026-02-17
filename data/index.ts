@@ -166,38 +166,7 @@ export const testimonials = [
   },
 ];
 
-/*export const companies = [
-  {
-    id: 1,
-    name: "amazon",
-    img: "/IETE.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "sap",
-    img: "/sap name.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
-  },
-];*/
+
 
 export const workExperience = [
   {
@@ -252,3 +221,5 @@ export const socialMedia = [
     link: "https://leetcode.com/u/user1035Cw/",
   },
 ];
+
+export const contactEmail = "guruprasathmaheswaran.07@gmail.com";

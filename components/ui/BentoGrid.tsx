@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils";
 
 import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
+import { contactEmail } from "@/data";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
 
@@ -22,7 +23,6 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        // change gap-4 to gap-8, change grid-cols-3 to grid-cols-5, remove md:auto-rows-[18rem], add responsive code
         "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
         className
       )}
@@ -37,7 +37,6 @@ export const BentoGridItem = ({
   id,
   title,
   description,
-  //   remove unecessary things here
   img,
   imgClassName,
   titleClassName,
@@ -52,8 +51,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["MySQL", "Express", "NodeJS","Python"];
-  const rightLists = ["ReactJS", "NextJS", "Azure","Postman"];
+  const leftLists = ["MySQL", "Express", "NodeJS", "Python"];
+  const rightLists = ["ReactJS", "NextJS", "Azure", "Postman"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,7 +66,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "guruprasathmaheswaran.07@gmail.com";
+    const text = contactEmail;
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
@@ -179,7 +178,6 @@ export const BentoGridItem = ({
                 className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
                   }`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
